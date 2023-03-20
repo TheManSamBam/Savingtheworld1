@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Graph plotter</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for("static",filename="style.css")}}">
+  </head>
+
+  <body>
+    <h1>Basic graph plotter</h1>
+ 
+    
+    <div id = "Linear">
+      <h2><a href="./linear">Linear equations</a></h2>
+      
+    </div>
+
+    <div id = "Quadratic">
+      <h2><a href="./quadratic">Quadratic equations</a></h2>
+    </div>
+
+    <div id = "Cubic">
+      <h2><a href="./cubic">Cubic equations</a></h2>
+    </div> 
+    
+<div> 
+<form action="/graph" method="post">
+  <label for="fname">Insert equation here:</label><br>
+  <input type="text" name="eqn" value="5*x+10"><br>
+  <input type="submit" value="Submit">
+</form> 
+</div>
+    
+
+
+
+    
+  </body>
+
+
+</html>
